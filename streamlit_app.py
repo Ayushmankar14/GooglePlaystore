@@ -108,6 +108,7 @@ def page_dashboard(df):
     st.markdown("### 📊 Visualizations")
     viz_option = st.selectbox("Choose plot", ["Rating Distribution", "Category vs Rating", "Installs vs Rating"])
 
+    plt.clf()
     if viz_option == "Rating Distribution":
         fig = plt.figure(figsize=(6, 4))
         sns.histplot(df['Rating'], bins=20, kde=True, color='skyblue')
@@ -150,7 +151,6 @@ def page_home():
     """, unsafe_allow_html=True)
 
     st.markdown('<p style="color:blue; font-size:18px;">Use the sidebar to navigate and explore features.</p>', unsafe_allow_html=True)
-
 
 # -------------------- MAIN ------------------------
 df = load_data()
