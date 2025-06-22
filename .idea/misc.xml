@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.13 (GooglePlayStore)" />
+=======
+    <option name="sdkName" value="Python 3.13 (Crimes in India)" />
+>>>>>>> b62ab8d (Initial commit for Streamlit deployment)
   </component>
 </project>
